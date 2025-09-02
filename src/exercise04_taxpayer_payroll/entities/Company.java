@@ -20,5 +20,17 @@ public class Company extends TaxPayer {
         this.numberOfEmployees = numberOfEmployees;
     }
 
-    
+    @Override
+
+    public String toString(){
+        return getName() + " $ " + String.format("%.2f", tax());
+    }
+
+    public double tax(){
+        if(getNumberOfEmployees() <= 25){
+            return getAnualIncome() * 0.16;
+        }else{
+            return getAnualIncome() * 0.14;
+        }
+    }
 }

@@ -9,9 +9,10 @@ import exercise04_taxpayer_payroll.entities.Company;
 public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
         List <TaxPayer> list = new ArrayList<>();
 
+        double totalTaxes = 0.0;
         System.out.print("Enter the number of tax payers: ");
         int n = scanner.nextInt();
         scanner.nextLine();
@@ -19,7 +20,8 @@ public class Program {
             System.out.println("Tax payer #" + (i+1) + " data: ");
             System.out.print("Individual or company (i/c)? ");
             char ch = scanner.next().charAt(0);
-            if(ch == i){
+            scanner.nextLine();
+            if(ch == 'i'){
                 System.out.print("Name: ");
                 String name = scanner.nextLine();
                 System.out.print("Anual income: ");
@@ -41,8 +43,10 @@ public class Program {
         System.out.println("TAXES PAID: ");
         for(TaxPayer payer : list){
             System.out.println(payer);
+            totalTaxes += payer.tax();
         }
 
+        System.out.print("TOTAL TAXES: $ " + String.format("%.2f", totalTaxes));
         scanner.close();
     }
 }

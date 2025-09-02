@@ -1,6 +1,6 @@
 package exercise04_taxpayer_payroll.entities;
 
-public class TaxPayer {
+public abstract class TaxPayer {
     private String name;
     private Double anualIncome;
 
@@ -28,8 +28,10 @@ public class TaxPayer {
         this.anualIncome = anualIncome;
     }
 
+    public abstract double tax();
+
     @Override 
     public String toString(){
-        return name + " $ " + anualIncome;
+        return name + " $ " + String.format("%.2f", tax());
     }
 }

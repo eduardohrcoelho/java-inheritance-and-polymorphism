@@ -20,5 +20,22 @@ public class Individual extends TaxPayer {
         this.healthExpenditures = healthExpenditures;
     }
 
-    
+    @Override
+
+    public String toString(){
+        return getName() + " $ " + String.format("%.2f", tax());
+    }
+
+    public double tax(){
+        double baseTax;
+        if(getAnualIncome() < 20000.0){
+            baseTax = getAnualIncome() * 0.15;
+        }else{
+            baseTax = getAnualIncome() * 0.25;
+        }
+
+        double healthAbatement = getHealthExpenditures() * 0.50;
+
+        return baseTax - healthAbatement;
+    }
 }
