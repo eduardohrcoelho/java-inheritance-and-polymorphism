@@ -9,7 +9,7 @@ import java.util.*;
 public class Program {
 
     /*
-    Uma plataforma de streaming precisa de um sistema para catalogar seu conteúdo. O programa deverá ler os dados de N itens de mídia (N fornecido pelo usuário),que podem ser Filmes ou Séries. O programa deverá ler os dados de N itens, armazenando todos em uma única lista. Ao final, deverá mostrar a ficha técnica de cada item do catálogo.
+    Uma plataforma de streaming precisa de um sistema para catalogar seu conteúdo. O programa deverá ler os dados de N itens de mídia (N fornecido pelo usuário),que podem ser Filmes ou Séries. O programa deverá ler os dados de N itens, armazenando todos em uma única lista. Ao final, deverá mostrar a ficha técnica de cada item do catalogo.
 
     A streaming platform needs a system to catalog its content. The program must read data from N media items (N provided by the user), which can be movies or series. The program must read the data from N items, storing them all in a single list. Finally, it must display the technical specifications for each item in the catalog.
      */
