@@ -34,7 +34,7 @@ Cada exercício prático é organizado em seu próprio pacote (`package`) para f
 
 - **Java:** Linguagem principal para os exemplos e exercícios.
 - **Git & GitHub:** Para versionamento de código.
-- **IDE:** Desenvolvido utilizando VS Code.
+- **IDE:** Desenvolvido utilizando VS Code/ Intellij Ultimate IDEA.
 
 ---
 
@@ -86,7 +86,7 @@ Each concept or practical exercise is organized into its own package to facilita
 
 - **Java:** The primary language for the examples and exercises.
 - **Git & GitHub:** For code versioning.
-- **IDE:** Developed using VS Code.
+- **IDE:** Developed using VS Code // Intellij Ultimate IDEA.
 
 ---
 
